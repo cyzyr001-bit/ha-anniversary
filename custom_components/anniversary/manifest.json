@@ -1,0 +1,13 @@
+{
+  "domain": "anniversary",
+  "name": "纪念日",
+  "version": "1.0.0",
+  "documentation": "https://github.com/cyzyr001-bit/ha-anniversary",
+  "issue_tracker": "https://github.com/cyzyr001-bit/ha-anniversary/issues",
+  "dependencies": [],
+  "codeowners": [],
+  "requirements": [],
+  "iot_class": "calculated",
+  "config_flow": true,
+  "integration_type": "service"
+}

@@ -1,0 +1,76 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Add anniversary",
+        "description": "Create an anniversary sensor. Each entry creates one sensor.",
+        "data": {
+          "name": "Name",
+          "year": "Year",
+          "month": "Month",
+          "day": "Day",
+          "calendar": "Calendar",
+          "display_mode": "Display mode",
+          "style": "Display style",
+          "period": "Period",
+          "is_leap_month": "Leap month",
+          "update_interval": "Update interval (seconds)"
+        },
+        "data_description": {
+          "name": "Sensor name, for example: Wedding anniversary.",
+          "year": "Type the year directly, for example 2050. Range 1900-2100. In lunar mode it is the lunar year.",
+          "month": "Select the month.",
+          "day": "Select the day. In lunar mode it is the lunar day; a missing 30th day falls back to the last day of that month.",
+          "calendar": "Whether the date is solar or lunar.",
+          "display_mode": "Absolute always shows a positive number. Signed can show negative numbers after the date has passed.",
+          "style": "Year-month-day and Year-month-day-hour-minute-second are text; Day is numeric. Leading zeros are omitted.",
+          "period": "None: count down to a fixed date. Year: repeats every year. Month: repeats every month.",
+          "is_leap_month": "Lunar only. Use the leap month when it exists; otherwise fall back to the regular month.",
+          "update_interval": "How often the sensor recalculates, in seconds. Default 3600."
+        }
+      }
+    },
+    "error": {
+      "invalid_name": "Name cannot be empty.",
+      "invalid_date": "Invalid date. Check year/month/day for solar, or month/day for lunar.",
+      "invalid_interval": "Update interval must be between 1 and 86400 seconds."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Edit anniversary",
+        "description": "The sensor will be reloaded after saving.",
+        "data": {
+          "name": "Name",
+          "year": "Year",
+          "month": "Month",
+          "day": "Day",
+          "calendar": "Calendar",
+          "display_mode": "Display mode",
+          "style": "Display style",
+          "period": "Period",
+          "is_leap_month": "Leap month",
+          "update_interval": "Update interval (seconds)"
+        },
+        "data_description": {
+          "name": "Sensor name, for example: Wedding anniversary.",
+          "year": "Type the year directly, for example 2050. Range 1900-2100. In lunar mode it is the lunar year.",
+          "month": "Select the month.",
+          "day": "Select the day. In lunar mode it is the lunar day; a missing 30th day falls back to the last day of that month.",
+          "calendar": "Whether the date is solar or lunar.",
+          "display_mode": "Absolute always shows a positive number. Signed can show negative numbers after the date has passed.",
+          "style": "Year-month-day and Year-month-day-hour-minute-second are text; Day is numeric. Leading zeros are omitted.",
+          "period": "None: count down to a fixed date. Year: repeats every year. Month: repeats every month.",
+          "is_leap_month": "Lunar only. Use the leap month when it exists; otherwise fall back to the regular month.",
+          "update_interval": "How often the sensor recalculates, in seconds. Default 3600."
+        }
+      }
+    },
+    "error": {
+      "invalid_name": "Name cannot be empty.",
+      "invalid_date": "Invalid date. Check year/month/day for solar, or month/day for lunar.",
+      "invalid_interval": "Update interval must be between 1 and 86400 seconds."
+    }
+  }
+}
